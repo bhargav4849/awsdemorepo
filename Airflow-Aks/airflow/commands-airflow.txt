@@ -1,0 +1,4 @@
+kubectl create namespace airflow
+helm repo add apache-airflow https://airflow.apache.org
+helm version
+helm upgrade --install airflow apache-airflow/airflow --namespace airflow -f values.yaml --debug --version 1.7.0
